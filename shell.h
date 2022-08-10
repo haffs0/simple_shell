@@ -8,11 +8,14 @@
 #include <string.h>
 
 #define TOK_BUFSIZE 64
-#define TOK_DELIM " \t\r\n\a"
+#define TOK_DELIM " :\t\r\n\a"
 
 int _cd(char **args);
 int _help(char **args);
 int exit_cmd(char **args);
+char *read_line(void);
+int _strlen(const char *string)
+
 
 
 #endif
