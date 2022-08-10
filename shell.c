@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
 * main - entry point
 * @ac: argument count
@@ -7,7 +8,6 @@
 *
 * Return: 0
 */
-
 int main(int ac, char **av, char *envp[])
 {
 	char *line = NULL;
@@ -22,7 +22,7 @@ int main(int ac, char **av, char *envp[])
 	while (1)
 	{
 		free_buffers(args);
-		prompt_user();
+		prompt();
 		line = read_line();
 		args = split_line(line);
 		status = execute(args);
