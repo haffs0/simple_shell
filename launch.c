@@ -19,7 +19,7 @@ int launch(char **args)
 	}
 	else if (pid == 0)
 	{
-		execve(args[0], args, env)
+		execve(args[0], args, env);
 		exit(0);
 	}
 	else

@@ -14,7 +14,7 @@ void free_buffers(char **buf)
 		return;
 	while (buf[i])
 	{
-		free(buf[i])
+		free(buf[i]);
 		i++;
 	}
 	free(buf);

@@ -8,7 +8,7 @@
 
 void handle_signal(int num)
 {
-	(void)m;
+	(void)num;
 	write(STDERR_FILENO, "\n", 1);
 	write(STDERR_FILENO, "$ ", 2);
 }

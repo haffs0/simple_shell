@@ -1,3 +1,4 @@
+#include "shell.h"
 /**
  * split_line - split line into tokens
  * @line: line to be split
