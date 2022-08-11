@@ -30,7 +30,7 @@ extern __sighandler_t signal(int __sig, __sighandler_t __handler);
 /* handle built ins */
 void print_env(void);
 void prompt(void);
-void handle_signal(int m);
+void handle_signal(int num);
 
 /* string handlers */
 int _strcmp(char *s1, char *s2);
